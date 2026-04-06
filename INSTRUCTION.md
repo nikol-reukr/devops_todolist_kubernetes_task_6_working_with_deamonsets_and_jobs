@@ -11,7 +11,7 @@ kubectl apply -f cronjob.yml
 DaemonSet makes a request every 5 seconds to the ClusterIP service:
 
 ```bash
-kubectl -n mateapp logs -l app=todoapp-curl --tail=50
+kubectl -n mateapp logs -l app=todoapp-1 --tail=50
 ```
 
 ### Validate CronJob (jobs + logs)
