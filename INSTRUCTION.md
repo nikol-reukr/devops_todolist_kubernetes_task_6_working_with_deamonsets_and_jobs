@@ -21,5 +21,5 @@ Wait a few minutes, then:
 
 ```bash
 kubectl -n mateapp get jobs --sort-by=.metadata.creationTimestamp
-kubectl -n mateapp get pods -l job-name --show-labels
+kubectl logs -l job-name -n mateapp
 ```

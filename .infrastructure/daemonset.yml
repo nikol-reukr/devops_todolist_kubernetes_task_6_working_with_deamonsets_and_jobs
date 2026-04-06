@@ -26,9 +26,6 @@ spec:
             memory: "200Mi"
         command: ["/bin/sh", "-c"]
         args: ['while true; do curl -sS http://todoapp-service.svc.cluster.local/ || echo "curl failed"; sleep 5; done']
-        ports:
-        - containerPort: 80
-          hostPort: 8080
 
 
 
